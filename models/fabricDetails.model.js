@@ -23,6 +23,11 @@ const fabricDetailsSchema = new mongoose.Schema(
             required: true
         }
     }, 
+    
+    {
+        strict: false
+    },
+    
     {
         timestamps: true
     }
