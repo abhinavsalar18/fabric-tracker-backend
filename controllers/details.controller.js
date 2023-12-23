@@ -29,10 +29,10 @@ const addData = asyncHandler ( async (req, res) => {
 
 
 const getAllData = asyncHandler ( async (req, res) => {
-    console.log("getting all data...", new Date().getMilliseconds());
+    // console.log("getting all data...", new Date().getMilliseconds());
     try {
         const fabricData = await FabricDetails.find();
-        console.log("getAllData fabric Data:", fabricData, new Date().getMilliseconds());
+        // console.log("getAllData fabric Data:", fabricData, new Date().getMilliseconds());
         res.status(200).json(
             new APIResponse(200, fabricData, "all data fetched successfully!")
         )
