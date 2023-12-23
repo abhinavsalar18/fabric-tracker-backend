@@ -2,7 +2,7 @@ import {Router} from "express"
 import { addData, deleteData, getAllData, updateData } from "../controllers/details.controller.js";
 
 const router = Router();
-
+// console.log("working");
 router.route("/addData").post(addData);
 router.route("/getAllData").get(getAllData);
 router.route("/deleteData/:id").delete(deleteData);
